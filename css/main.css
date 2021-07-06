@@ -37,6 +37,7 @@ nav {
 .logo {
   width: 30%;
   font-size: 40px;
+  color:white;
 }
 .nav-ber {
   width: 70%;
@@ -69,7 +70,8 @@ nav {
 .R-color {
   color: #ffff09;
 }
-/* close-header-area */
+/* end-header-area */
+
 /*  Order-section */
 .Order-section {
   background-repeat: no-repeat;
@@ -99,35 +101,47 @@ nav {
 .order h3 {
   font-size: 30px;
   color: rgb(255, 0, 0);
+  margin-top: 10px;
 }
 .order h4 {
   font-size: 40px;
+  margin-top: 20px;
 }
 .order p {
   font-size: 20px;
   color: gray;
+  margin-top: 20px;
 }
 .order a button {
   height: 40px;
   width: 25%;
   margin-top: 10px;
-  background-color: #12b4fb;
+  background-image: linear-gradient(45deg, red, tomato);
   color: rgb(252, 252, 252);
   border: none;
   font-size: 17px;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 30px;
 }
 .order a button:hover {
-  background-color: #156181;
+  background-image: linear-gradient(45deg, red, rgb(94, 35, 25));
 }
 .model {
   width: 50%;
-  height: 100px;
+  height: 200px;
   margin-left: 300px;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.model img {
+  width: 460px;
+  height: 450px;
+  margin-top: 40px;
 }
 /* end */
 
-/* recipe-section */
+/* recipe section */
+
 .recipe-section {
   width: 100%;
   height: auto;
@@ -147,74 +161,38 @@ nav {
   font-size: 19px;
   color: gray;
 }
-.manu-img {
+.box-container {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  justify-content: space-around;
+  padding: 10px 80px 0;
+  height: auto;
+  flex-wrap: wrap;
 }
-.menu-img1 {
-  width: 33.33%;
+.box {
+  height: 480px;
+  width: 340px;
+  box-shadow: 10px 10px 40px grey;
+  padding: 15px;
+  margin-top: 50px;
+  transition: 1s all;
+}
+.box:hover {
+  transform: scale(1.1);
+}
+.box img {
+  width: 100%;
+  height: 250px;
+  padding-bottom: 25px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.box h3 {
   text-align: center;
-  box-shadow: 10px 20px 40px gray;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.menu-img1 img {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px 20px;
-}
-.menu-img1 h3 {
   font-size: 19px;
-  text-align: center;
 }
-.menu-img1 p {
-  width: 80%;
-  margin: auto;
-  color: gray;
-}
-.menu-img2 {
-  width: 33.33%;
-  text-align: center;
-  box-shadow: 10px 20px 40px gray;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.menu-img2 img {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px 20px;
-}
-.menu-img2 h3 {
-  font-size: 19px;
-  text-align: center;
-}
-.menu-img2 p {
-  width: 80%;
-  margin: auto;
-  color: gray;
-}
-.menu-img3 {
-  width: 33.33%;
-  text-align: center;
-  box-shadow: 10px 20px 40px gray;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.menu-img3 img {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px 20px;
-}
-.menu-img3 h3 {
-  font-size: 19px;
-  text-align: center;
-}
-.menu-img3 p {
-  width: 80%;
-  margin: auto;
-  color: gray;
-}
+
+/* end */
 
 /* about  */
 
@@ -224,7 +202,8 @@ nav {
   width: 100%;
   height: auto;
   display: flex;
-  margin-top: 70px;
+  padding: 20px 20px;
+  margin-top: 100px;
 }
 .about about-img {
   width: 50%;
@@ -252,24 +231,34 @@ nav {
   height: 40px;
   width: 25%;
   margin-top: 10px;
-  background-color: #12b4fb;
+  background-image: linear-gradient(#0f5a7a, rgb(13, 31, 194));
   color: rgb(252, 252, 252);
   border: none;
   font-size: 17px;
   margin-top: 30px;
 }
 .about .about-text a button:hover {
-  background-color: #0f5a7a;
+  background-image: linear-gradient(#040c0f, rgb(13, 31, 194));
 }
 /* end About */
+/* subcribe */
 form {
   border: 3px solid #f1f1f1;
   font-family: Arial;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  font-size: 19px;
+}
+form h2 {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
 }
 
 input[type='text'],
 input[type='submit'] {
-  width: 100%;
+  width: 40%;
   padding: 12px;
   margin: 8px 0;
   display: inline-block;
@@ -278,18 +267,23 @@ input[type='submit'] {
 }
 
 input[type='checkbox'] {
-  margin-top: 16px;
 }
 
 input[type='submit'] {
   background-color: #1a0aff;
   color: white;
   border: none;
+  text-align: center;
+  width: 300px;
+  margin-left: 350px;
 }
 
 input[type='submit']:hover {
   opacity: 0.8;
 }
+
+/* end */
+
 footer {
   text-align: center;
   background-color: rgb(44, 41, 41);
